@@ -1,0 +1,100 @@
+:root {
+  --sponsor-height--: 350px;
+}
+.sponsors {
+  background: #121220;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+.sponsors:nth-child(1) {
+  border-color: orange;
+  color: orange;
+}
+.sponsors:nth-child(2) {
+  border-color: blue;
+  color: blue;
+}
+.sponsors:nth-child(3) {
+  /* width: 39%;
+  height: var(--sponsor-height--);
+  float: left; */
+  border-color: maroon;
+  color: maroon;
+}
+.sponsors:nth-child(4) {
+  /* width: 55%;
+  height: var(--sponsor-height--);
+  float: right; */
+  border-color: green;
+  color: green;
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.images {
+  padding: 1rem 1rem 1rem 0px;
+  margin: auto;
+  max-width: 150px;
+}
+.logos {
+  max-width: 100%;
+}
+@media (max-width: 406px) {
+  .sponsors:nth-child(1) .image .images {
+    max-width: 75px;
+  }
+  .sponsors:nth-child(2) .image .images {
+    max-width: 75px;
+  }
+  .sponsors:nth-child(3) .image .images {
+    max-width: 100px;
+  }
+  .sponsors:nth-child(4) .image .images {
+    max-width: 100px;
+  }
+}
+@media (max-width: 900px) and (min-width: 407px) {
+  .sponsors:nth-child(1) .image .images {
+    max-width: 220px;
+  }
+  .sponsors:nth-child(2) .image .images {
+    max-width: 220px;
+  }
+  .sponsors:nth-child(3) .image .images {
+    max-width: 75px;
+  }
+  .sponsors:nth-child(4) .image .images {
+    max-width: 130px;
+  }
+}
+@media (min-width: 901px) {
+  .sponsors:nth-child(1) .image .images {
+    max-width: 290px;
+  }
+  .sponsors:nth-child(2) .image .images {
+    max-width: 290px;
+  }
+  .sponsors:nth-child(3) .image .images {
+    max-width: 100px;
+  }
+  .sponsors:nth-child(4) .image .images {
+    max-width: 110px;
+  }
+  .sponsors:nth-child(3) {
+    width: 39%;
+    height: var(--sponsor-height--);
+    float: left;
+  }
+  .sponsors:nth-child(4) {
+    width: 55%;
+    height: var(--sponsor-height--);
+    float: right;
+  }
+}
